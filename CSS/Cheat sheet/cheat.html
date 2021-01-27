@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>CSS cheat sheet</title>
+</head>
+<body>
+    <h1 class=>Selectors</h1>
+        <p>CSS classes can be reusable and applied to many elements. Class selectors are denoted with a period <code>.</code> followed by the class name. CSS ID selectors should be unique and used to style only a single element. ID selectors are denoted with a hash sign <code>#</code> followed by the id name.
+        </p>
+        <p>You can match multiple selectors to the same CSS rule, using a comma-separated list. In example: <code>h1, h2 { }</code></p>
+        <p>CSS selectors can also be chained so that rule sets apply only to elements that match all criteria. For instance, to select <code>h1</code> elements that also have the <code>title</code> class, the selector <code>h1.title</code> can be used</p>
+    <br>
+    <h1>Specificity</h1>
+        <p>Specificity is a ranking system that is used when there are multiple conflicting property values that point to the same element. When determining which rule to apply, the selector with the highest specificity wins out: <code>!important</code> => <code>#ID</code> => <code>.class</code> => <code>type</code></p>
+    <br>
+    <h1>Multiple attributes</h1>
+        <p>Some HTML attributes can have multiple attribute values. Multiple attribute values are separated by a space between each attribute: <code>class="bold red value3"</code></p>
+    <br>
+    <h1>Descendant selector</h1>
+        <p>The CSS descendant selector combinator is used to match elements that are descended from another matched selector. They are denoted by a single space between each selector and the descended selector. All matching elements are selected regardless of the nesting level in the HTML. In example: <code>section ol li { }</code></p>
+    <br>
+    <h1>Declarations</h1>
+        <p>A declaration is the key-value pair of a CSS property and its value. The declarations are used to set style properties and construct rules to apply to individual or groups of elements. The property name and value are separated by a colon, and the entire declaration must be terminated by a semi-colon. In example: <code>color: black;</code></p>
+        <h2>Font size</h2>
+            <p>The <code>font-size</code> property is used to set text sizes. Font size values can be many different units or types, the most common is pixels. Example: <code>font-size: 10px;</code></p>
+        <h2>Background color</h2>
+            <p>The <code>background-color</code> property controls the background color of elements. Example: <code>background-color: gray;</code></p>
+        <h2>Opacity</h2>
+            <p>The <code>opacity</code> property can be used to control the transparency of an element. The value of this property ranges from <code>0</code> (transparent) to <code>1</code> (opaque). Example: <code>opacity: 0.5;</code></p>
+        <h2>Font weight</h2>
+            <p>The <code>font-weight</code> property can be used to set the weight (boldness) of text. The provided value can be a keyword such as: <code>normal</code>, <code>bold</code>, <code>lighter</code>. Example: <code>font-weight: lighter;</code></p>
+        <h2>Text align</h2>
+            <p>The <code>text-align</code> property can be used to set the alignment of inline contents. The values for this property are: <code>left</code>, <code>center</code>, <code>right</code>. Example: <code>text-align: center;</code></p>
+    <h1>Foreground</h1>
+        <p>With the <code>color</code> property, the foreground text color of an element can be set in CSS. The value can be a valid color name supported en CSS like <code>red</code> or <color>blue</color>. Also, 3 digit or 6 digit color code like <code>#22f</code> or <code>#2a2aff</code>. Example: <code>p { color: blue; }</code></p>
+    <h1>Background image</h1>
+        <p>The <code>background-image</code> property sets the background image of an element. An image URL should be provided in the syntax <code>url("sky.png")</code> as the value of the property. Example: <code>background-image: url("./moon.png");</code></p>
+    <h1>Resource URLs</h1>
+        <p>The <code>url()</code> function is used to wrap resource URLs. These can be applied to several properties such as the <code>background-image</code>. Example: <code>background-image: url("https://bitcoin.org/img/icons/logotop.svg?1611389545");</code></p>
+    <h1>Font family</h1>
+        <p>The <code>font-family</code> property is used to specify the typeface in a rule set. Fonts must be available to the browser to display correctly, either on the computer or linked as a web font. If a font value is not available, browsers will display their default font. When using a multi-word font name, it is best practice to wrap them in quotes. Example: <code>h1 { font-family: sans-serif }</code></p>
+</body>
+</html>

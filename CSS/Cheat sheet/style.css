@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    background-color: #363636;
+}
+h1 {
+    color: #E8175D;
+    display:block; 
+    width: 100%;
+    border-bottom:1px solid #474747;
+    text-align: center;
+}
+p {
+    font-size: 19px;
+    color: #A8A7A7;
+    padding: 15px;
+}
+h2 {
+    color: #CC527A;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+code {
+    padding: 2px 4px;
+    background-color: #4c4c4c;
+    opacity: 1;
+    border-radius: 3px;
+    font-family:'Courier New', Courier, monospace;
+}
