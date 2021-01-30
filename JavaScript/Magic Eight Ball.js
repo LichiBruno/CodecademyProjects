@@ -29,6 +29,6 @@ switch (randomNumber) {
     eightBall = 'Outlook not so good';
   break;
   case 7:
-    eightBall = 'Pedazo de puto';
+    eightBall = 'No seas comunista man';
 }
 console.log(`The eight ball answered: ${eightBall}`); 
