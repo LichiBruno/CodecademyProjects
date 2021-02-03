@@ -28,7 +28,7 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 const invalidCards = [];
 
 const validateCred = (arr) =>{
-    console.log('Check this creditcard: ' + arr);
+    console.log('Check this credit card: ' + arr);
     let creditCard = arr.slice(0);
     let x = creditCard.pop();
     creditCard.reverse();
@@ -84,4 +84,4 @@ for (let y = 0; y < invalidCards.length ; y++) {
     idInvalidCardCompanies(invalidCards[y]);
 }
 
-console.log('These companies have issued invalid creditcards: ' + companies.join(', '));
+console.log('These companies have issued invalid credit cards: ' + companies.join(', '));
