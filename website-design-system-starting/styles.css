@@ -1,0 +1,99 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 10%;
+}
+
+.container {
+    border: 2px solid #898989;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.color-container {
+    width: 100%;
+}
+
+.color-panel {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    margin: 20px auto;
+    min-height: 100px;
+}
+
+.dark-blue {
+    background-color: #0a0e14;
+    color: #fff;
+}
+
+.dodger-blue {
+    background-color: #0f527d;
+    color: #fff;
+}
+
+.royal-blue {
+    background-color: #1fbad9;
+    color: #000;
+}
+
+.soft-orange {
+    background-color: #ffb437;
+    color: #000;
+}
+
+.soft-green {
+    background-color: #c2b11e;
+    color: #000;
+}
+
+.font-panel {
+    width: 45%;
+    display: inline-block;
+}
+
+.font-label {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.regular {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.segoe-ui {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.nunito-sans {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.source-code-pro {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.text-panel h1 {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.text-panel h2 {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.text-panel p {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+}
