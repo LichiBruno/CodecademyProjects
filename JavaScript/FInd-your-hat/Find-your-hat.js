@@ -1,4 +1,4 @@
-const prompt = require('prompt-sync')({sigint: true});
+const prompt = require('prompt-sync')({ sigint: true });
 
 // Game title
 const title = "Welcome to 'Find your hat'"
@@ -55,7 +55,7 @@ while (!hasHat) {
   printMap(map, legend)
 
   const move = prompt('Which direction?:')
-  switch(move) {
+  switch (move) {
     // Updates player position
     case 'w':
       playerPosX -= 1
@@ -84,27 +84,27 @@ if (!characterAtPlayerPos) {
         `)
   hasHat = -1
 } else {
-    switch(characterAtPlayerPos) {
-      case hole:
-        // Game over when player fells into a hole
-        console.log(`
+  switch (characterAtPlayerPos) {
+    case hole:
+      // Game over when player fells into a hole
+      console.log(`
           **GAME OVER**
           ${name} fell into a hole, we hope you can get out soon!
           A passer-by scores a new hat...
         `)
-        hasHat = -1
-        break;
-      case hat:
-       // Game end when character at player position is hat
-       console.log(`
+      hasHat = -1
+      break;
+    case hat:
+      // Game end when character at player position is hat
+      console.log(`
         **YOU FOUND YOUR HAT!**
         The name of ${name} now is a part of the history! 
         `)
-        hasHat = true
-        break;
-      default:
+      hasHat = true
+      break;
+    default:
       // Update map with the last move
-        map[playerPosX][playerPosY] = path
+      map[playerPosX][playerPosY] = path
   }
 }
 
@@ -145,7 +145,7 @@ function getRandomInt(max) {
 }
 
 function setHoleThreshold(difficulty) {
-  switch(difficulty) {
+  switch (difficulty) {
     case 1:
       return 0.2
     case 2:
@@ -161,8 +161,8 @@ function setHoleThreshold(difficulty) {
 
 function setDifficulty(num) {
   return (num === "1" || num === "5")
-  ? parseInt(num)
-  : 2
+    ? parseInt(num)
+    : 2
 }
 
 function setName(str) {
